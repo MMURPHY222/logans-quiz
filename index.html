@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css"/>
+</head>
+<body>
+    <div class = "wrapper">
+        <div id = "question-box" class = "hide">
+            <div id = "question-text">Question Text Here</div>
+            <div id = "choice-buttons"> 
+                <button class = "answer-choice-button" id = "button-a" value = "A">
+                    <h1 id = "button-1">A</h1>
+                </button>
+                <button class = "answer-choice-button" id = "button-b" value = "B">
+                    <h1 id = "button-2">B</h1>
+                </button>
+                <button class = "answer-choice-button" id = "button-c" value = "C">
+                    <h1 id = "button-3">C</h1>
+                </button>
+                <button class = "answer-choice-button" id = "button-d" value = "D">
+                    <h1 id = "button-4">D</h1>
+                </button>
+
+            </div>
+        </div>
+        <div id = "end-game" class = "hide">
+            <h2 id = "final-time"></h2>
+            <p id = "final-ins">Please enter you initials to log your high score!</p>
+            <form>
+                <input type = "text" id = "init" value = "XX"><br>
+                <input type = "submit" id = "submit" value = "Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class = "start-screen">
+        <h1 id = "start-title">Logan's Montana Quiz!</h1>
+        <p id = "start-ins">
+            I tried to pick hard questions!
+        </p>
+        <button id = "start-button">Start Game!</button>
+    </div>
+
+    <div id = "scores">High Score</div>
+    <div id = "timer">Timer:</div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
